@@ -1,0 +1,12 @@
+test/
+src/
+build/
+lib/
+.git/
+.editorconfig
+.gitignore
+jest.config.js
+webpack.config.js
+binding.gyp
+steam_api64.dll
+steam_api64.lib

@@ -1,0 +1,28 @@
+{
+  "main": "dist/index.js",
+  "bin": "dist/index.js",
+  "dependencies": {
+    "node-addon-api": "^1.1.0"
+  },
+  "scripts": {
+    "test": "node --napi-modules ./test/test_binding.js"
+  },
+  "gypfile": true,
+  "name": "sdrm",
+  "description": "Unofficial steam drm for node.js desktop apps",
+  "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/opdev1004/sdrm.git"
+  },
+  "keywords": [
+    "drm",
+    "steam"
+  ],
+  "author": "Victor Chanil Park",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/opdev1004/sdrm/issues"
+  },
+  "homepage": "https://github.com/opdev1004/sdrm#readme"
+}
