@@ -11,7 +11,7 @@ Just like how that is possible, this method cannot secure your app 100%. And the
 
 So in general, i recommend developers to hire a law firm, for taking care of any problem that can be done within law.
 
-Howeve drm is still a good protection. And it is always better than nothing.
+However drm is still a good protection. And it is always better than nothing.
 
 
 ## ▶️ install
@@ -20,7 +20,6 @@ npm i sdrm
 ```
 
 ## 🛠 Build
-
 ```
 node-gyp build
 ```
@@ -45,10 +44,14 @@ node-gyp rebuild
 | Build tool | node-gyp and anything that is needed for building NAPI |
 
 
-## 👩‍🎓 Tutorial
-This package needs steam_api64.dll.
+## 📖 Example
+This example will be the case where filename is just name of dll file eg."steam_api64.dll"
 
-### steam_api64.dll is placed at where package.json:
+For development, steam_api64.dll can be placed next to package.json.
+
+For production, place steam_api64.dll next to .exe file.
+
+### In general:
 ```
 // it will throw error if it fails.
 // or it may return boolean true/false
@@ -64,7 +67,7 @@ catch(e)
 }
 ```
 
-Electron.js:
+### Electron.js:
 ```
 app.on('ready',()=>{
     try
@@ -72,6 +75,7 @@ app.on('ready',()=>{
         // SDRM(filename;file path as a string, app id number)
         SDRM("steam_api64.dll", 00000000);
         // it will throw error if it fails.
+        createWindow();
     }
     catch(e)
     {
