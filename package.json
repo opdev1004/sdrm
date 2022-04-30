@@ -10,7 +10,7 @@
   "gypfile": true,
   "name": "sdrm",
   "description": "Unofficial steam drm for node.js desktop apps",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/opdev1004/sdrm.git"
